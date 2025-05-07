@@ -92,9 +92,7 @@ void binarySearch()
         cout << "===========================================\n";
         cout << "      Masukkan elemen yang dicari:          ";
         cin >> x;
-    }
-
-}
+    
 
         int low = 0;
         int high = nPanjang - 1;
@@ -121,6 +119,12 @@ void binarySearch()
         {
             cout << "\n[x] Elemen " << x << "tidak ditemukan dalam array.\n";
         }
+        cout << "\nIngin mencari lagi? (y/n): ";
+        cin >> ulang;
+    } while (ulang == 'y' || ulang == 'Y');
+}
+
+
 
 
     
